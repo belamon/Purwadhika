@@ -22,3 +22,18 @@ print(f"Anggur: {amount_grape} x Rp {grape_price} = Rp {total_grape_price}")
 
 print(f"Total Belanja Anda Adalah: Rp {total_price}")
 
+
+#exercise 2 
+
+money = int(input("Masukkan jumlah uang"))
+
+under_budget = total_price - money
+over_budget = money - total_price
+
+if money < total_price:         #conditions
+    print(f"Transaksi Anda Dibatalkan, Uang Anda Kurang Sebesar Rp {under_budget} ")
+elif money > total_price:
+    print(f"Uang Kembali Anda Rp {over_budget}")
+elif money == total_price:
+    print("Transaksi Anda Berhasil Terima kasih")
+
